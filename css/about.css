@@ -1,3 +1,13 @@
+/* canvas that enables gooey cursor --------------------------------- */
+#canvas {
+    weight: 100%;
+    height: 100%;
+    position: fixed;
+    overflow: auto;
+    z-index: -1;
+}
+/*--------------------------------- */
+
 html{
     background-color: white;
     font-family: neue-haas-unica, sans-serif; 
@@ -14,14 +24,15 @@ body{
 }
 
 h1 {
-    font-size: 2.6em;
-    font-weight: 300;
+    font-size: 3em;
+    font-weight: normal;
     font-family: monospace;
-    letter-spacing: 0px;
 }
 
 h2 {
-    
+    font-size: 1.5em;
+    font-weight: normal;
+    font-family: monospace;
 }
 
 .inverse {
@@ -30,13 +41,8 @@ h2 {
 
 p {
     font-size: 1.1em;
-    transition: background-color .5s;
+    line-height: 1.2;
 }
-
-/* p:hover {
-    background: rgb(219,255,51);
-    color: black;
-} */
 
 .p-small {
     font-size: 15px;
@@ -55,12 +61,17 @@ small {
     padding-bottom: 8px;
 }
 
+a{
+    text-decoration: none;
+    cursor: default;
+}
+
 hr {
     border: 1px dashed rgb(219,255,51);
     margin-top: 20px;
 }
 
-.hr-projects {
+.hr-full {
     border: 1px dashed black;
     position: absolute;
     left: 0;
@@ -73,6 +84,11 @@ mark {
     font-family: monospace;
 }
 
+/* images --------------------------------- */
+
+img {
+    cursor: default;
+}
 
 /* document --------------------------------- */
 
@@ -109,9 +125,9 @@ section {
     padding: 10px;
     margin-top: 40px;
     bottom: 0px;
-    /* position: sticky; */
     color:rgb(219,255,51);
     background-color: black;
+    cursor: default;
 }
 
 /* top bar-------------------------------------- */
@@ -127,6 +143,10 @@ section {
 #logo-container {
     padding: 10px;
     width: 20%;
+    }
+
+    .logo-img {
+        width: 140px;
     }
 
 #navMenu {
@@ -153,9 +173,18 @@ section {
     #navMenu li a{ 
         display: block;
         margin:0;
-        padding:20px;
+        padding-top:10px;
+        padding-bottom:10px;
+        padding-right:20px;
+        padding-left:20px;
     }
 
+    #navMenu li a:hover {
+        outline-style: dashed;
+        outline-width: 1px;
+        background-color: rgb(219,255,51);
+        }
+    
     #navMenu ul li {
         padding: 0px;
         margin: 0px;
@@ -169,16 +198,20 @@ section {
     }
 
     #navMenu ul li ul {
-        background:rgb(219,255,51);
+        background-color:rgb(219,255,51);
         position:absolute;
         visibility:hidden;
         width: 200px;
         /* top:46px; */
+        z-index: 100;
     }
 
     #navMenu ul li ul a {
         display: flex;
-        padding: 10px;
+        padding-top:10px;
+        padding-bottom:10px;
+        padding-right:20px;
+        padding-left:20px;
         margin: 0;
     }
 
@@ -188,7 +221,8 @@ section {
 
     #navMenu ul li:hover ul a:hover {
     outline-style: dashed;
-    outline-width: 2px;
+    outline-width: 1px;
+    background-color: rgb(219,255,51);
     }
 
 /* highlight color --------------------------------- */
@@ -203,12 +237,3 @@ section {
       }
 
 
-/* canvas that enables gooey cursor --------------------------------- */
-
-#canvas {
-    weight: 100%;
-    height: 100%;
-    position: fixed;
-    overflow: auto;
-    z-index: -1;
-}
