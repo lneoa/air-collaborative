@@ -47,7 +47,7 @@ p {
 
 .p-big {
     font-size: 3em;
-    text-indent: -0.5em;
+    text-indent: -0.3em;
 }
 
 small {
@@ -241,8 +241,8 @@ img {
 /* document --------------------------------- */
 
 .document {
-    padding-left: 10%;
-    padding-right: 20%;
+    padding-left: 15%;
+    padding-right: 15%;
     position: static;
     display: block;
 }
