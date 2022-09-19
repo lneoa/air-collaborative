@@ -1,0 +1,275 @@
+/* canvas that enables gooey cursor --------------------------------- */
+#canvas {
+    weight: 100%;
+    height: 100%;
+    position: fixed;
+    overflow: auto;
+    z-index: -1;
+}
+/*--------------------------------- */
+
+html{
+    background-color: white;
+    font-family: neue-haas-unica, sans-serif; 
+    box-sizing: border-box;
+    
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+body{
+    margin: 0;
+    cursor: none;
+}
+
+h1 {
+    font-size: 3em;
+    font-weight: normal;
+    font-family: monospace;
+}
+
+h2, h4 {
+    font-size: 1.5em;
+    font-weight: normal;
+    font-family: monospace;
+}
+
+.inverse {
+    color:rgb(219,255,51);
+}
+
+p {
+    font-size: 1.1em;
+    line-height: 1.2;
+}
+
+.p-small {
+    font-size: 15px;
+}
+
+.p-big {
+    font-size: 3em;
+    text-indent: -0.5em;
+}
+
+small {
+    font-size: 13px;
+}
+
+#ul-body {
+    padding-left: 15px;
+    font-size: 1.1em;
+}
+
+#ul-body li {
+    padding-bottom: 8px;
+}
+
+a{
+    border-bottom: 1px dashed;
+    text-decoration: none;
+    cursor: default;
+}
+
+a:hover {
+    color: black;
+}
+
+hr {
+    border: 1px dashed rgb(219,255,51);
+    margin-top: 20px;
+}
+
+.hr-full {
+    border: 1px dashed black;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-top: 0;
+}
+
+mark {
+    background: rgb(219,255,51);
+    font-family: monospace;
+}
+
+blockquote {
+    font-size: 1.5em;
+}
+
+/* images --------------------------------- */
+
+img {
+    cursor: default;
+}
+
+.project-img {
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+/* document --------------------------------- */
+
+section {
+    margin-left: 15%;
+    margin-right: 15%;
+    position: static;
+}
+
+.twoCol-container {
+    display: flex;
+}
+
+.col-1 {
+    width: 25%;
+    top: 0;
+}
+
+.col-2{
+    width: 75%;
+    font-weight: 300;
+    top: 0;
+}
+
+.bio-container {
+    padding-left: 10%;
+    margin-bottom: 10%;
+}
+
+.gallery-container {
+    display: flex;
+}
+
+    .col-1-50 {
+        width: 50%;
+        top: 0;
+        padding-right: 5px;
+    }
+
+    .col-2-50 {
+        width: 50%;
+        top: 0;
+        padding-left: 5px;
+    }
+
+/* footer --------------------------------- */
+
+#air-collab-footer{
+    display: block;
+    padding: 10px;
+    margin-top: 40px;
+    bottom: 0px;
+    color:rgb(219,255,51);
+    background-color: black;
+    cursor: default;
+}
+
+/* top bar-------------------------------------- */
+
+#wrapper {
+    background:rgb(219,255,51);
+    display: flex;
+    padding-left: 10%;
+    padding-right: 10%;
+    cursor: default;
+}
+
+#logo-container {
+    padding: 10px;
+    width: 20%;
+    }
+
+    .logo-img {
+        width: 140px;
+    }
+
+#navMenu {
+    display: flex;
+    align-items:center;
+    justify-content: right;
+    width: 80%;
+    font-family: monospace;
+    font-size: 1.3em;
+    }
+
+    #navMenu ul{
+        margin:0;
+        padding:0;
+    }
+
+    #navMenu li{
+        margin:0;
+        padding:0px;
+        list-style:none;
+    }
+
+    /* box around nav links */
+    #navMenu li a{ 
+        display: block;
+        margin:0;
+        padding-top:10px;
+        padding-bottom:10px;
+        padding-right:20px;
+        padding-left:20px;
+        border-bottom: none;
+    }
+
+    #navMenu li a:hover {
+        outline-style: dashed;
+        outline-width: 1px;
+        background-color: rgb(219,255,51);
+        }
+    
+    #navMenu ul li {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    #navMenu ul li a {
+        color:black;
+        text-align:left;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
+    #navMenu ul li ul {
+        background-color:rgb(219,255,51);
+        position:absolute;
+        visibility:hidden;
+        width: 200px;
+        /* top:46px; */
+        z-index: 100;
+    }
+
+    #navMenu ul li ul a {
+        display: flex;
+        padding-top:10px;
+        padding-bottom:10px;
+        padding-right:20px;
+        padding-left:20px;
+        margin: 0;
+    }
+
+    #navMenu ul li:hover ul {
+        visibility: visible;
+    }
+
+    #navMenu ul li:hover ul a:hover {
+    outline-style: dashed;
+    outline-width: 1px;
+    background-color: rgb(219,255,51);
+    }
+
+/* highlight color --------------------------------- */
+
+    ::selection { /* WebKit/Blink Browsers */
+        color: black;
+        background: rgb(219,255,51); 
+      }
+      ::-moz-selection { /* Gecko Browsers */
+        color: black;
+        background: rgb(219,255,51);
+      }
+
+
