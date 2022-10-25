@@ -1,0 +1,5 @@
+name: AIR Collaborative
+url: http://rutgers-aircollaborative.net/projects
+baseurl: /projects
+
+{{ "/_site/css/main.css" | absolute_url }}

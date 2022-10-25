@@ -119,3 +119,13 @@ document.onmousemove = function(e) {
 };
 goo.update(W/2, H/2, 0, 0);
 
+
+// /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+// function myFunction() {
+//   var x = document.getElementById("myTopnav");
+//   if (x.className === "navMenu") {
+//     x.className += " responsive";
+//   } else {
+//     x.className = "navMenu";
+//   }
+// } 
