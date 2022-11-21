@@ -221,7 +221,7 @@ img {
     left: 0;
     padding: 1rem;
     position: absolute;
-    top: 1rem;
+    top: 0rem;
     width: 100%;
     /* border: dashed 2px red; */
   }
@@ -344,10 +344,7 @@ img {
     .navMenu li a{
         display: block;
         margin:0;
-        padding-top:10px;
-        padding-bottom:10px;
-        padding-right:10px;
-        padding-left:10px;
+        padding: 10px;
         border-bottom: none;
     }
 
@@ -374,7 +371,6 @@ img {
         position:absolute;
         visibility:hidden;
         width: 200px;
-        /* top:46px; */
         z-index: 100;
     }
 
@@ -492,3 +488,27 @@ img {
         background-color: navajowhite;
     }
 } */
+
+/* button to top ---------------------- */
+
+#myBtn {
+    display: none; /* Hidden by default */
+      position: fixed; /* Fixed/sticky position */
+      bottom: 20px; /* Place the button at the bottom of the page */
+      right: 30px; /* Place the button 30px from the right */
+      z-index: 99; /* Make sure it does not overlap */
+      border: none; /* Remove borders */
+      outline: none; /* Remove outline */
+      background-color: white; /* Set a background color */
+      box-shadow: 0px 0px 20px 8px rgb(219,255,51);
+      color: black; /* Text color */
+      cursor: pointer; /* Add a mouse pointer on hover */
+      padding: 10px; /* Some padding */
+      border-radius: 0px; /* Rounded corners */
+      font-size: 1.25em; /* Increase font size */
+      font-family: monospace;
+    }
+    
+    #myBtn:hover {
+    background-color: white; /* Add a dark-grey background on hover */
+    }
