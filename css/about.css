@@ -12,7 +12,6 @@ html{
     background-color: white;
     font-family: neue-haas-unica, sans-serif; 
     box-sizing: border-box;
-    
 }
 *, *:before, *:after {
 	box-sizing: inherit;
@@ -47,7 +46,7 @@ h4 {
 
 p {
     font-size: 1.1em;
-    line-height: 1.25;
+    line-height: 1.3;
 }
 
 .p-small {
@@ -214,6 +213,30 @@ iframe {
 .footer-link:hover {
     color:rgb(219,255,51);
 }
+
+#overlay {
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+  }
+  
+  #overlay-text {
+      width: 400px;
+      height: 150px;
+      margin: auto;
+      margin-top: 20%;
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.85);
+      color: black;
+  }
 
 /* top bar-------------------------------------- */
 
