@@ -529,6 +529,16 @@ visibility: visible; opacity: 1;
         padding: 10px;
         border-bottom: none;
     }
+
+    .navMenu ul li ul {
+        background:white;
+        position:absolute;
+        visibility:hidden;
+        width: 200px;
+        z-index: 100;
+        outline-style: dashed;
+        outline-width: 1px;
+    }
     
     .div-hero-img {
         margin: 0;
