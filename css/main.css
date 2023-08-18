@@ -503,6 +503,10 @@ visibility: visible; opacity: 1;
         margin: 0;
     }
 
+    blockquote {
+        font-size: 1.1em;
+    }
+
     .wrapper {
         display: block;
         margin: auto;
@@ -517,6 +521,13 @@ visibility: visible; opacity: 1;
         padding-bottom: 5px;
         width: 100%;
         justify-content: center;
+    }
+
+    .navMenu li a{
+        display: block;
+        margin: 0px;
+        padding: 10px;
+        border-bottom: none;
     }
     
     .div-hero-img {
@@ -544,13 +555,13 @@ visibility: visible; opacity: 1;
 
         .col-1-25 {
             margin: auto;
-            padding: 10px;
+            padding: 0px;
             width: 100%;
         }
         
         .col-2-75 {
             margin: auto;
-            padding: 10px;
+            padding: 0px;
             width: 100%;
         }
 
