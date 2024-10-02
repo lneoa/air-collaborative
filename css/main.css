@@ -99,6 +99,7 @@ mark {
 }
 
 blockquote {
+    padding-top: 10px;
     font-size: 1.3em;
 }
 
